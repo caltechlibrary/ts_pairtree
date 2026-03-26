@@ -1,0 +1,46 @@
+{
+  "@context": "https://w3id.org/codemeta/3.0",
+  "type": "SoftwareSourceCode",
+  "codeRepository": "https://github.com/caltechlibrary/ts_pairtree",
+  "author": [
+    {
+      "id": "https://orcid.org/0000-0003-0900-6903",
+      "type": "Person",
+      "givenName": "R. S.",
+      "familyName": "Doiel",
+      "email": "rsdoiel@caltech.edu"
+    }
+  ],
+  "dateCreated": "2026-03-26",
+  "dateModified": "2026-03-26",
+  "datePublished": "2026-03-26",
+  "description": "A pairtree implementation for TypeScript. It is based on Caltech Library's the pairtree implementation in Go provided at https://github.com/caltechlibrary/pairtree.",
+  "funder": [
+    {
+      "name": "Caltech Library",
+      "ror": "https://doi.org/10.13039/100006961"
+    }
+  ],
+  "keywords": [
+    "pairtree",
+    "typescript",
+    "archives",
+    "library",
+    "preservation"
+  ],
+  "name": "ts_pairtree",
+  "license": "https://caltechlibrary.github.io/ts_pairtree/LICENSE",
+  "programmingLanguage": [
+    "TypeScript"
+  ],
+  "runtimePlatform": "- Deno",
+  "softwareRequirements": [
+    "Deno"
+  ],
+  "version": "0.0.1-alph",
+  "developmentStatus": "WIP",
+  "issueTracker": "https://github.com/caltechlibrary/ts_pairtree/issues",
+  "releaseNotes": "Initial port of the Go pairtree code to TypeScript.",
+  "copyrightYear": 2026,
+  "copyrightHolder": "California Institute of Technology"
+}
