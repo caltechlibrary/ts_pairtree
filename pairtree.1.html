@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>ts_pairtree</title>
+    <link rel="stylesheet" href="https://caltechlibrary.github.io/css/site.css">
+    <link rel="stylesheet" href="https://media.library.caltech.edu/cl-webcomponents/css/code-blocks.css">
+    <script type="module" src="https://media.library.caltech.edu/cl-webcomponents/copyToClipboard.js"></script>
+    <script type="module" src="https://media.library.caltech.edu/cl-webcomponents/footer-global.js"></script>
+</head>
+<body>
+<header>
+<a href="https://library.caltech.edu"><img src="https://media.library.caltech.edu/assets/caltechlibrary-logo.png" alt="Caltech Library logo"></a>
+</header>
+<nav>
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="index.html">README</a></li>
+    <li><a href="LICENSE">LICENSE</a></li>
+    <li><a href="INSTALL.html">INSTALL</a></li>
+    <li><a href="user_manual.html">User Manual</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="search.html">Search</a></li>
+    <li><a href="https://github.com/caltechlibrary/ts_pairtree">GitHub</a></li>
+</ul>
+</nav>
+<section>
+<h1 id="name">NAME</h1>
+<p>pairtree</p>
+<h1 id="synopsis">SYNOPSIS</h1>
+<p>pairtree <a href="#options">OPTIONS</a> encode STRING_TO_ENCODE
+pairtree <a href="#options">OPTIONS</a> decode STRING_TO_DECODE</p>
+<h1 id="description">DESCRIPTION</h1>
+<p>pairtree command line interface for working with pairtree encoded
+UTF-8 strings. Pairtree paths are used by libraries and archives for in
+the directory layout of digital objects.</p>
+<h1 id="options">OPTIONS</h1>
+<dl>
+<dt>-help</dt>
+<dd>
+display help
+</dd>
+<dt>-license</dt>
+<dd>
+display license
+</dd>
+<dt>-version</dt>
+<dd>
+display version
+</dd>
+</dl>
+<h1 id="examples">EXAMPLES</h1>
+<p>Encode “this_is_some_sort_of_id” and then decode the resulting value.
+~~~</p>
+<p>pairtree encode this_is_some_sort_of_id pairtree decode
+th/is/<em>i/s</em>/so/me/<em>s/or/t</em>/of/_i/d</p>
+<p>~~~</p>
+<p>pairtree 0.0.1-alpha</p>
+</section>
+<footer-global></footer-global>
+</body>
+</html>

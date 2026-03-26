@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>ts_pairtree</title>
+    <link rel="stylesheet" href="https://caltechlibrary.github.io/css/site.css">
+    <link rel="stylesheet" href="https://media.library.caltech.edu/cl-webcomponents/css/code-blocks.css">
+    <script type="module" src="https://media.library.caltech.edu/cl-webcomponents/copyToClipboard.js"></script>
+    <script type="module" src="https://media.library.caltech.edu/cl-webcomponents/footer-global.js"></script>
+</head>
+<body>
+<header>
+<a href="https://library.caltech.edu"><img src="https://media.library.caltech.edu/assets/caltechlibrary-logo.png" alt="Caltech Library logo"></a>
+</header>
+<nav>
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="index.html">README</a></li>
+    <li><a href="LICENSE">LICENSE</a></li>
+    <li><a href="INSTALL.html">INSTALL</a></li>
+    <li><a href="user_manual.html">User Manual</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="search.html">Search</a></li>
+    <li><a href="https://github.com/caltechlibrary/ts_pairtree">GitHub</a></li>
+</ul>
+</nav>
+<section>
+<h1 id="ts_pairtree">ts_pairtree</h1>
+<p>A pairtree implementation for TypeScript. It is based on Caltech
+Library’s the pairtree implementation in Go provided at
+https://github.com/caltechlibrary/pairtree.</p>
+<p>This is a library for translate a UTF-8 string to/from a pairtree. It
+is based on the Go <a
+href="https://caltechlibrary.github.io/pairtree">pairtree</a> module
+developed at Caltech Library. notation. This is typically used in
+storing things on disc (e.g. repository filesystems). This code is based
+on the specification found at
+https://confluence.ucop.edu/download/attachments/14254128/PairtreeSpec.pdf?version=2&amp;modificationDate=1295552323000&amp;api=v2
+which is cited on the <a
+href="https://github.com/OCFL/spec/wiki">OCFL</a> wiki.</p>
+<h2 id="example">Example</h2>
+<p>Initial port of the Go pairtree code to TypeScript.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> <span class="op">*</span> <span class="im">as</span> pairtree <span class="im">from</span> <span class="st">&#39;https://caltechlibrary.github.io/ts_pairtree/mod.ts&#39;</span><span class="op">;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> key <span class="op">=</span> <span class="st">&quot;12mIEERD11&quot;</span><span class="op">;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="vs">`Key: </span><span class="sc">${</span>key<span class="sc">}</span><span class="vs">`</span>)<span class="op">;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> pairPath <span class="op">:=</span> pairtree<span class="op">.</span><span class="fu">encode</span>(key)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="vs">`Endoded key &quot;</span><span class="sc">${</span>key<span class="sc">}</span><span class="vs">&quot; -&gt; &quot;</span><span class="sc">${</span>pairPath<span class="sc">}</span><span class="vs">&quot;`</span>)<span class="op">;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>key <span class="op">=</span> pairtree<span class="op">.</span><span class="fu">decode</span>(pairPath)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="vs">`Decoded path &quot;</span><span class="sc">${</span>pairtreePath<span class="sc">}</span><span class="vs">&quot; -&gt; &quot;</span><span class="sc">${</span>key<span class="sc">}</span><span class="vs">&quot;`</span>)<span class="op">;</span></span></code></pre></div>
+<h2 id="release-notes">Release Notes</h2>
+<p>Initial port of the Go pairtree code to TypeScript.</p>
+<ul>
+<li>version: 0.0.1-alpha</li>
+<li>status: WIP</li>
+<li>released: 2026-03-26</li>
+</ul>
+<h3 id="authors">Authors</h3>
+<ul>
+<li>Doiel, R. S.</li>
+</ul>
+<h2 id="software-requirements">Software Requirements</h2>
+<ul>
+<li>Deno</li>
+</ul>
+<h4 id="runtime-platform">Runtime platform</h4>
+<p><strong>- Deno</strong></p>
+<h2 id="related-resources">Related resources</h2>
+<ul>
+<li><a
+href="https://github.com/caltechlibrary/ts_pairtree/issues">Getting
+Help, Reporting bugs</a></li>
+<li><a
+href="https://caltechlibrary.github.io/ts_pairtree/LICENSE">LICENSE</a></li>
+<li><a href="INSTALL.html">Installation</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</section>
+<footer-global></footer-global>
+</body>
+</html>

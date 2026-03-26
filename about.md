@@ -9,7 +9,7 @@ authors:
 
 
 repository_code: https://github.com/caltechlibrary/ts_pairtree
-version: 0.0.1-alph
+version: 0.0.1-alpha
 license_url: https://caltechlibrary.github.io/ts_pairtree/LICENSE
 
 programming_language:
@@ -28,7 +28,7 @@ date_released: 2026-03-26
 About this software
 ===================
 
-## ts_pairtree 0.0.1-alph
+## ts_pairtree 0.0.1-alpha
 
 Initial port of the Go pairtree code to TypeScript.
 

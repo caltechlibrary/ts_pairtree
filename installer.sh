@@ -1,11 +1,11 @@
 #!/bin/sh
-# generated with CMTools 0.0.1-alph 
+# generated with CMTools 0.0.1-alpha 54daec1
 
 #
 # Set the package name and version to install
 #
 PACKAGE="ts_pairtree"
-VERSION="0.0.1-alph"
+VERSION="0.0.1-alpha"
 GIT_GROUP="caltechlibrary"
 RELEASE="https://github.com/$GIT_GROUP/$PACKAGE/releases/tag/v$VERSION"
 if [ "$PKG_VERSION" != "" ]; then

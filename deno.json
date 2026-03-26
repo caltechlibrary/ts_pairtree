@@ -1,5 +1,6 @@
 {
   "tasks": {
+    "build": "deno compile -o bin/pairtree cli.ts"
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1"

@@ -1,8 +1,8 @@
 // ts_pairtree version and license information.
 
-export const version: string = '0.0.1-alph',
+export const version: string = '0.0.1-alpha',
 releaseDate: string = '2026-03-26',
-releaseHash: string = '',
+releaseHash: string = '54daec1',
 licenseText: string = `
 
 Copyright (c) 2026, Caltech

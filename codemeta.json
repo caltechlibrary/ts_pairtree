@@ -37,7 +37,7 @@
   "softwareRequirements": [
     "Deno"
   ],
-  "version": "0.0.1-alph",
+  "version": "0.0.1-alpha",
   "developmentStatus": "WIP",
   "issueTracker": "https://github.com/caltechlibrary/ts_pairtree/issues",
   "releaseNotes": "Initial port of the Go pairtree code to TypeScript.",

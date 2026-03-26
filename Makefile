@@ -1,5 +1,5 @@
 
-# generated with CMTools 0.0.1-alph 
+# generated with CMTools 0.0.1-alpha 54daec1
 
 #
 # Simple Makefile for Deno based Projects built under POSIX.
